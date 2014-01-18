@@ -1,0 +1,21 @@
+<h1> Listagem de UFs </h1>
+
+<table>
+<tr>
+	<th>ID</th>
+	<th>Nome</th>
+</tr>
+
+<% @ufs.each do |uf| %>
+	<tr>
+		<td><%= uf.id %></td>
+		<td><%= uf.nome %></td>
+		<td>
+			<%= link_to 'Mostrar', action: 'show', id: uf %>
+		</td>
+	</tr>
+<% end %>
+</table>
+
+<br/>
+<%= link_to 'Nova', action: 'new' %>

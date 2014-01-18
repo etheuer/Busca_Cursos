@@ -1,0 +1,12 @@
+class CreateCursosInstituicoesJoinTable < ActiveRecord::Migration
+  def self.up
+  	create_table :cursos_instituicoes, :id => false do |t|
+  		t.integer :curso_id
+  		t.integer :instituicao_id
+  	end
+  end
+
+  def self.down
+  	drop_table :cursos_instituicoes
+  end
+end

@@ -1,0 +1,4 @@
+class CreateUfsMunicipiosJoinTable < ActiveRecord::Migration
+  def change
+  end
+end
