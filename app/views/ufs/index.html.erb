@@ -12,6 +12,10 @@
 		<td><%= uf.nome %></td>
 		<td>
 			<%= link_to 'Mostrar', action: 'show', id: uf %>
+			<%= link_to 'Editar', action: 'edit', id: uf %>
+			<%= link_to 'Apagar', { action: 'destroy', id: uf }, {method: "delete"} %>
+	
+
 		</td>
 	</tr>
 <% end %>
